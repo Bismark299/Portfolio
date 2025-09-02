@@ -131,7 +131,7 @@ body {
   margin-top: 20px;
 }
 
-.resume .resume-buttons button {
+.resume .resume-buttons a {
   background-color: #ff6600;
   color: white;
   border: none;
@@ -139,9 +139,10 @@ body {
   font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
 }
 
-.resume .resume-buttons button:hover {
+.resume .resume-buttons a:hover {
   background-color: #e65c00;
 }
 

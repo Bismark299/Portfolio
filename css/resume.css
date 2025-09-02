@@ -1,0 +1,86 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.resume-header {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.resume-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.resume-header p {
+  margin: 5px 0;
+}
+
+.resume-header .contact-info a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.resume-header .contact-info a:hover {
+  text-decoration: underline;
+}
+
+.resume-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.resume-section h2 {
+  color: #ff6600;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.skills ul,
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li,
+.projects li {
+  margin-bottom: 10px;
+}
+
+.job {
+  margin-bottom: 25px;
+}
+
+.job h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.job-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.resume-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+.resume-footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
