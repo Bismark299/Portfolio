@@ -97,6 +97,10 @@ header {
   .cta {
     display: none; /* hide button on mobile */
   }
+  
+  .logo a img {
+    height: 50px;
+  }
 }
 
 .hero {
@@ -402,3 +406,4 @@ header {
   text-decoration: underline;
   color: #f0f0f0;
 }
+
