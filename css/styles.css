@@ -3,6 +3,9 @@ body {
   line-height: 1.6;
   margin: 0;
   height: 100vh;
+  /*max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;*/
 }
 
 /* HEADER */
@@ -11,7 +14,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 5px 40px;
   background-color: #444;
   color: white;
   position: sticky;
@@ -20,11 +23,8 @@ header {
 }
 
 /* Logo */
-.logo h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin: 0;
-  color: #fff;
+.logo a img {
+  height: 60px;
 }
 
 /* Navigation */
@@ -73,6 +73,7 @@ header {
 }
 
 /* === Responsive Design === */
+
 @media (max-width: 768px) {
   .nav-links {
     display: none; /* hide links on mobile */
@@ -128,10 +129,11 @@ header {
 }
 
 .hero-text a {
+  font-size: 1rem;
   background-color: #ff6600;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 20px 40px;
   font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
@@ -158,6 +160,13 @@ header {
   .hero img {
     height: 300px;
     margin: 20px 0;
+    border-radius: 50%;
+  }
+  .hero-text a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
   }
 }
 
