@@ -5,6 +5,99 @@ body {
   height: 100vh;
 }
 
+/* HEADER */
+/* === Header Styling === */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #444;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #fff;
+}
+
+/* Navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #ff6600; /* hover highlight */
+}
+
+/* CTA button */
+.cta button {
+  background: #ff6600;
+  color: #333;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: #ff6600 0.3s ease;
+}
+
+.cta button:hover {
+  background: #e65c00;
+}
+
+/* Menu icon (hamburger for mobile) */
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide links on mobile */
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .nav-links.show {
+    display: flex; /* toggle with JS */
+  }
+
+  .menu-icon {
+    display: block; /* show menu icon */
+  }
+
+  .cta {
+    display: none; /* hide button on mobile */
+  }
+}
+
 .hero {
   background-color: #333;
   color: white;
@@ -34,7 +127,7 @@ body {
   margin-bottom: 10px;
 }
 
-.hero-text button {
+.hero-text a {
   background-color: #ff6600;
   color: white;
   border: none;
@@ -42,10 +135,17 @@ body {
   font-size: 1em;
   cursor: pointer;
   border-radius: 5px;
+  text-decoration: none;
 }
 
-.hero-text button:hover {
+.hero-text a:hover {
   background-color: #e65c00;
+}
+
+.hero-text a i {
+  margin-left: 5px;
+  color: green;
+  font-size: 25px;
 }
 
 @media (max-width: 850px) {
@@ -62,6 +162,7 @@ body {
 }
 
 .resume {
+  background-color: #f4f4f4;
   display: flex;
   align-items: center;
   justify-content: space-between;
